@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    background-color: rgb(125, 65, 180);
+    color: white;
+    padding: 0.3em 3em;
+}
