@@ -1,0 +1,67 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color: #ffffff;
+    background-color:  #6667ab;
+    text-align: center;    
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    margin:10px;
+}
+
+input, textarea {
+    display: block;
+    width: 50%;
+    margin: 10px;
+    border: 1px solid #000;
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+}
+
+button {
+    margin: 10px;
+    background-color: #6667ab;
+    color: #ffffff;
+    padding: 5px;
+    width: 20%;
+    border: 2px solid #6667ab;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+p {
+    font-size: 12px;
+
+}
+
+div {
+    border: 1px solid #6667ab;
+    padding: 10px;
+    margin: 10px;
+}
+a{
+    color:#6667ab;
+    text-decoration: none;
+}
+a.remove {
+    color: red;
+    margin-left: 35%;
+}
+
+span.progress {
+    background-color: yellow;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
