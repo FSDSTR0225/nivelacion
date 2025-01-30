@@ -1,10 +1,76 @@
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+* {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 25px;
+  text-decoration: none;
 }
-h1{
-    background-color: rgb(125, 65, 180);
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  & header {
+    width: 32em;
+    margin-bottom: 1em;
+  }
+  & main {
+    width: 30em;
+  }
+}
+
+h1 {
+  text-align: center;
+  background-color: #6667ab;
+  color: white;
+  padding: 0.3em;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  & input,
+  textarea {
+    border: 2px solid black;
+  }
+  & button {
+    margin: 1em 0;
+    padding: 0.2em;
+    font-weight: 600;
+    font-size: 1.2em;
     color: white;
-    padding: 0.3em 3em;
+    background-color: #6667ab;
+    border: none;
+  }
+}
+
+.todo-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #6667ab;
+  padding: 0.5em;
+  & p {
+    &:first-child {
+      color: rgb(59, 65, 80);
+    }
+    &:last-child {
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      & span {
+        display: flex;
+        gap: 2em;
+      }
+      .delete {
+        color: tomato;
+      }
+    }
+  }
 }

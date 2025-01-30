@@ -11,23 +11,48 @@
             <h1>TODOLIST</h1>
         </header>
         <main>
-            <h2>Nueva </h2>
+            <h2>Nueva Tarea</h2>
             <form action="">
-                <label for="description">Escribe la </label>
-                <textarea name="description" id=""></textarea>
-                <label for="date"></label>
-                <input type="date">
+                <label for="description">Escribe la descripcion de la tarea </label>
+                <textarea name="description" id="description"></textarea>
+                <label for="date">Fecha limite</label>
+                <input type="date" name="date">
                 <button>INSERTAR</button>
             </form>
             <H2>Tareas</H2>
-            <ul>
-                <li>
-                    <div>
-                        <p></p>
-                        <p></p>
-                    </div>
-                </li>
-            </ul>
+            <div class="todo-card">
+                <p>Preparar la clase de Nuclio Full</p>
+                <p><span> in progress </span><span> Fecha limite 25JUN</span></p> 
+                <p>
+                    <span>
+                        <a href="">editar</a>
+                        <a href="">marcar como finalizada</a>
+                    </span>
+                    <a href="" class="delete">eliminar</a>
+                </p>
+            </div>
+            <div>
+                <p>Preparar la clase de Nuclio Full Stack Developer</p>
+                <p><span>in progress</span><span>Fecha limite 25JUN</span></p> 
+                <p>
+                    <span>
+                        <a href="">editar</a>
+                        <a href="">marcar como finalizada</a>
+                    </span>
+                    <a href="">eliminar</a>
+                </p>
+            </div>
+            <div>
+                <p>Preparar la clase de Nuclio Full Stack Developer</p>
+                <p><span>in progress</span><span>Fecha limite 25JUN</span></p> 
+                <p>
+                    <span>
+                        <a href="">editar</a>
+                        <a href="">marcar como finalizada</a>
+                    </span>
+                    <a href="">eliminar</a>
+                </p>
+            </div>
         </main>
 </body>
 </html>
