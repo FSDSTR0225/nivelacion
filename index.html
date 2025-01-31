@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> ToDoList</h1>
+    </header>
+    <div class="form">
+        <h2>Nueva Tarea</h2>
+        <form>
+            <label>Escribe la descriccion de la tarea</label> 
+             <textarea placeholder="MAX 150 caracteres"></textarea>
+            <label for="deadline"> Fecha límite </label>
+                <input type="date" name="deadline">
+            <label for="state"> Estado de la tarea </label>
+            <select name="state" id="">
+                <option> TO DO</option>
+                <option> IN PROGRESS</option>
+                 <option>DONE</option>
+            </select>
+             <button type="submit"> Insertar</button>
+    
+        </form>
+    
+    </div>
+<h2>Tareas</h2>
+<div class="submitted">
+     <h4>Preparar la clase de Nuclio Full Stack Developer
+        <p><span class="done">DONE</span>
+             Fecha limite 30/01/2025</p>
+        <p>
+            <a href="">EDITAR</a>  
+            <a href="">MARCAR COMO FINALIZADA</a>
+            <a href="" class="delete">ELIMINAR</a>
+        </p>
+</div>
+<div class="submitted">
+    <h4>Devolver libros a la biblioteca y recoger nuevos libros sobre ciencia ficción
+       <p><span class="inprogress">IN PROGRESS</span> 
+        Fecha limite 15/02/2025</p>
+       <p>
+            <a href="">EDITAR</a>
+            <a href="">MARCAR COMO FINALIZADA</a>
+            <a href="" class="delete">ELIMINAR</a>
+        </p>
+</div>
+<div class="submitted">
+    <h4>Preparar malletas y contratar el seguro para el viaje a Marte</h4>
+       <p><span class="todo">TO DO</span> Fecha limite 03/03/2025</p>
+       <p><a href="">EDITAR</a> <a href="">MARCAR COMO FINALIZADA</a> <a href="" class="delete">ELIMINAR</a></p>
+</div>
+</body>
+</html>
