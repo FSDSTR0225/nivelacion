@@ -47,6 +47,10 @@ form {
     color: white;
     background-color: #6667ab;
     border: none;
+    transition:  0.5s;
+    &:hover {
+        background-color:#4f519e
+    }
   }
 }
 
@@ -54,23 +58,66 @@ form {
   display: flex;
   flex-direction: column;
   border: 2px solid #6667ab;
-  padding: 0.5em;
+  padding: 0.4em;
+  margin-bottom: 1em;
   & p {
     &:first-child {
-      color: rgb(59, 65, 80);
+      color: rgb(89, 100, 126);
+    }
+    &:nth-child(2){
+        display: flex;
+        justify-content: flex-start;
+        gap: 1em;
+        align-items: baseline;
+        .state {
+            text-transform: uppercase;
+                color: white;
+                padding: 0 0.4em;
+                border-radius: 0.2em;
+                font-size: 0.9em;
+        }
+        .inprogress {
+            background-color: rgb(162, 226, 66);
+            &::before{
+                content: "in progress";
+            }
+        }
+        .done{
+            background-color: red;
+            &::before{
+                content: "done";
+            }
+        }
+        .finished {
+            background-color: rgb(32, 179, 32);
+            &::before{
+                content: "finished";
+            }
+        }
+        .date {
+            font-size: 0.7em;
+            color: rgb(136, 144, 165);
+        }
     }
     &:last-child {
       display: flex;
       justify-content: space-between;
       text-transform: uppercase;
-      font-size: 0.8em;
+      font-size: 0.7em;
       & span {
         display: flex;
         gap: 2em;
+        & a:hover {
+            color: #6667ab;
+        }
       }
       .delete {
         color: tomato;
+        &:hover{
+            color: red;
+        }
       }
     }
+    
   }
 }
