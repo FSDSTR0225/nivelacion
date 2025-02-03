@@ -81,4 +81,18 @@ a.delete {
     color: #ff0000;
     float: right;
 }
- 
+a:hover {
+background-color: #6560a2;
+color:#ffffff;
+border: solid 1px #6560a2;
+border-radius: 3px;
+padding: 3 px;
+}
+
+a.delete:hover {
+    color: #ffffff;
+    background-color: #ff0000;
+    border: solid 1px #ff0000;
+border-radius: 3px;
+padding: 3 px;
+}
