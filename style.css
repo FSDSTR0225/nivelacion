@@ -1,64 +1,72 @@
-body{
+
+body {
     font-family: sans-serif;
 }
 
-
-h1{
+h1 {
+    color: #FFFFFF;
     background-color: #6667AB;
-    color: white;
-    text-align: center;
+    text-align: center;   
 }
 
-h2{
+h2 {
     font-size: 16px;
-
+    font-weight: bold;
 }
-label{
+
+label {
     display: block;
-    margin: 10px;
 }
 
-textarea,input {
-    display: block;
-    margin: 10px;
-    border: 2px solid black;
-}
-
-button{
-    background-color: #6667AB;
-    color: white;
-    padding: 4px;
-    text-align: center;
+input, textarea  {
+    display:block;
     width: 100%;
-    border-radius: 2px;
-
+    border: 2px solid #000000;
+    margin-bottom: 16px;
+    padding: 5px;
 }
 
-a{
+button {
+    display:block;
+    background-color: #6667AB;
+    color: #FFFFFF;
+    width:100%;
+    padding: 4px;
+    border: 2px solid #6667AB;
+    border-radius: 2px;
+}
+
+a {
     font-size: 14px;
     color: #6667AB;
     text-decoration: none;
-    margin: 5px;
-
-
+    margin-right:16px;
 }
 
-span{
+span {
     background-color: #EFAC00;
-    color: white;
-    padding: 2px 6px  2px 6px;
+    color: #FFFFFF;
+    padding: 2px 6px 2px 6px;
     font-weight: normal;
     text-transform: uppercase;
-    border-radius: 2px;
+    border-radius:2px;
+    font-size: 14px;
 }
 
-div{
+span.done {
+    background-color: rgb(16, 94, 16);
+}
+span.todo {
+    background-color: #666666;
+}
+
+div {
     border: 1px solid #6667AB;
-    margin-bottom: 16px;
-
+    padding:10px;
+    margin-bottom:16px;
 }
+
 a.remove {
     color: red;
     margin-left: 32px;
 }
-

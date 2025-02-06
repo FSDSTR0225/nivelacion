@@ -6,49 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODOLIST</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+
 </head>
 
 <body>
         <h1>TODOLIST</h1>
         <h2>Nueva tarea</h2>
+
+    <form class="main-form">
         <label>Escrine la descripción de la tarea</label>
-        <textarea></textarea>
+        <textarea name="description" placeholder=""></textarea>
 
         <label>Fecha límite</label>
-        <input type="date"></input>
+        <input type="date"name="duedate"/>
 
         <button>insertar</button>
+    </form>
 
     <h2>Tareas</h2>
-    <div>
-        <p>Preparar la clase de Nuclio Full Stack Developer</p>
-        <p><span>In progress </span> fecha limite: 25JUN</p>
-        <p>
-            <a href="">EDITAR</a>
-            <a href="">MARCAR COMO FINALIZADO</a>
-            <a href="" class="remove">ELIMINAR</a>
-        </p>
-    </div>
 
-    <div>
-        <p>Devolver libros</p>
-        <p><span>In progress </span> fecha limite: 25JUN</p>
-        <p>
-            <a href="">EDITAR</a>
-            <a href="">MARCAR COMO FINALIZADO</a>
-            <a href="" class="remove">ELIMINAR</a>
-        </p>
-    </div>
-
-    <div>
-        <p>Preparar la clase </p>
-        <p><span>In progress </span> fecha limite: 25JUN</p>
-        <p>
-            <a href="">EDITAR</a>
-            <a href="">MARCAR COMO FINALIZADO</a>
-            <a href="" class="remove">ELIMINAR</a>
-        </p>
-    </div>
+    <div class="task-container"></div>
+   
 
 </body>
 
