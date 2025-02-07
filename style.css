@@ -68,6 +68,7 @@ div {
 
 a.remove {
     color: red;
-   margin-left: 32px;
-
+    margin-left: 32px;
+    display: flex;
+    justify-content: flex-end;
 }
