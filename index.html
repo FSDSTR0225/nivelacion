@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
         <header>
@@ -12,14 +13,16 @@
         </header>
         <main>
             <h2>Nueva Tarea</h2>
-            <form action="">
+            <form action="" id="main-form">
                 <label for="description">Escribe la descripcion de la tarea </label>
                 <textarea name="description" id="description"></textarea>
                 <label for="date">Fecha limite</label>
-                <input type="date" name="date">
-                <button>INSERTAR</button>
+                <input type="date" name="duedate">
+                <span id="field-form"></span>
+                <button type="submit">INSERTAR</button>
             </form>
             <H2>Tareas</H2>
+            <div id="todo-container"></div>
             <div class="todo-card">
                 <p>Preparar la clase de Nuclio Full</p>
                 <p><span class="state inprogress"></span><span class="date">Fecha limite 25JUN</span></p> 
